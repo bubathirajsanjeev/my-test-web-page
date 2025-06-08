@@ -1,122 +1,133 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title><style>
-     .hero{
-        display: flex;
-        margin-right: 100px;
-        justify-content: space-between;
-        align-items: center;
-
-
-     }
-     nav ul{
-        display: flex;
-     }
-     nav ul li{
-        padding: 10px 20px;
-     }
-     header{
-        background-color: rgb(126, 142, 231);
-        color: aliceblue;
-
-     }
-     .logo{
-    font-size: 55px;
-    margin-left: 25px;
-     }
-     body{
-        background-color: rgb(27, 10, 90);
-     }
-     .loga{
-        margin-left: ;
-        color: black;
-        font-size: 25px;
-     }
-     span{
-        color: blanchedalmond;
-        font-size: 30px;
-     }
-      nav ul li a{
-        color: rgb(2, 11, 19);
-         font-weight: bold;
-
-      }
-      nav ul li a:hover { 
-        color: brown;
-        transition: 1s;
-
-      }
-    .home {
-       top: 75;
-       left: 25;
-       bottom: 25;
-       position: absolute;
-       transform: translate(50%,50%);
-       color: white;
-    
-    }
-    .about{
-      bottom: 250;
-      left:25 ; 
-      position: absolute;
-   
-   
-   
-   }
-
-    image  {
-         width: 10;
-         height: 10;
-
-        
-    }
-      <:any-link about.html>
-      
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
-    <div class=" hero">
-        <div class="logo"> BUBATHIRAJ <span>GANESAN</span></div>
-        <nav>
-          <ul>
-       
-       <li><a href="#home_"> home</a></li> 
-        <li><a href="#about_" >about me</a></li>
-        <li><a  href="talant.html" >skill</a></li>
-        <li><a href="work,html" >work</a></li>
-        <li><a href="CONTACT.html">contact</a></li>
+        <div class="container">
+            <h1>Jane Doe</h1>
+            <p>Web Developer & Designer</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-    </div></header>
-    <section class="home"  id="#home_">
-        <div >
-            <h3> hello my Name is</h3>
-                <h1>bubathiraj <span>Ganesan</span></h1>
-                <p> A  passionate web developer creating</p>
-                <div class="subscribe">
-                    <form>
-                        <input type="text" name="name" placeholder="Enter your Name">
-                        <input type="submit"name="submit" value="let start">
 
-                    </form>
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://via.placeholder.com/300" alt="Profile Picture" class="profile-img">
+                <div class="about-text">
+                    <p>Hello! I'm a passionate web developer with 5 years of experience creating beautiful, functional websites. I specialize in front-end development with a focus on user experience.</p>
+                    <p>When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new recipes in the kitchen.</p>
                 </div>
-                <a href="#project"
-                class="btn"> view my work</a>
-            
-        </div>
-        <section class="about me" id="#about_">
-         <div >
-            <h1>about me</h1>
-            <h4>Bubathiraj</h4>
-            <p>don bosco college</p>
             </div>
-         </section>
-  
-   
+        </div>
+    </section>
 
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                    <h3>E-commerce Website</h3>
+                    <p>A fully responsive online store with shopping cart functionality.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                    <h3>Task Management App</h3>
+                    <p>Web application for organizing and tracking daily tasks.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+                <div class="project-card">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 3">
+                    <h3>Portfolio Website</h3>
+                    <p>Custom portfolio design for a freelance photographer.</p>
+                    <a href="#" class="btn">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Front-end</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>React.js</li>
+                        <li>Vue.js</li>
+                        <li>Responsive Design</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Back-end</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools</h3>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Webpack</li>
+                        <li>Figma</li>
+                        <li>Adobe Creative Suite</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> jane.doe@example.com</p>
+                    <p><i class="fas fa-phone"></i> (123) 456-7890</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Jane Doe. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
